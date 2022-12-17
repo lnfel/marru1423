@@ -1,0 +1,80 @@
+body{
+    background: url('https://demonslayer-hinokami.sega.com/img/common/og_img.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+body::after{
+    content: '';
+    position: absolute;
+    z-index: -1;
+    inset: 0;
+    background: #000;
+    opacity: 0.6;
+}
+main{
+    color: rgb(244, 241, 241);
+    font-weight: bold;
+}
+a{
+    color: #ffff;
+    text-decoration: none;
+}
+.text1{
+    font-size: 6rem;
+}
+.th4 span{
+    padding: 0 10px;
+    border-right:1px solid #fff ;
+}
+.th4{
+    z-index: 1;
+    max-width: 400px;
+}
+.cards{
+    margin: 3rem;
+}
+.play{
+    position: absolute;
+    display:  inline-flex;
+    bottom: 50px;
+    backdrop-filter: blur(10px);
+}
+.play a{
+    position: relative;
+    margin-right: 0.9rem;
+    padding:  3px 5px;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    font-size: 2rem;
+    border: 1px solid #fff;
+}
+.play a:hover, .play a:focus{
+    background: #fff;
+    color: #000;
+}
+.btn {
+    position: absolute;
+}
+.btn a{
+    position: relative;
+    display: inline-block;  
+    background-color: rgb(230, 5, 5);
+    margin-right: 0.9rem;
+    padding:  3px 5px;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+}
+.btn a:nth-child(2){
+    background-color: #000;
+    border: 1px solid #fff;
+}
+.btn a:focus:nth-child(2), .btn a:hover:nth-child(2){
+    background: rgb(235, 5, 235);
+}
+.btn a:nth-child(1){
+    background-color: rgb(244, 2, 2);
+    border: 1px solid #fff;
+}
+.btn a:focus:nth-child(1) ,.btn a:hover:nth-child(1){
+    background: rgb(25, 2, 238);
+}
