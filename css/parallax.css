@@ -1,0 +1,39 @@
+.relative {
+    position: relative;
+}
+
+.parallax-container {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(17 24 39);
+    overflow: hidden;
+}
+
+#parallax {
+    display: flex;
+    gap: 4vmin;
+    position: absolute;
+    /* left: 50%; */
+    left: 0%;
+    top: 50%;
+    /* transform-origin: center; */
+    transform: translate(0%, -50%);
+    will-change: left, transform;
+}
+
+#parallax .parallax-img {
+    width: 40vmin;
+    height: 56vmin;
+    object-fit: cover;
+    object-position: 100% 50%;
+    will-change: object-position;
+}
+
+#parallax a:hover .card::before, #parallax a:focus .card::before {
+    background-color: rgb(17 24 39);
+    opacity: 0.5;
+}
+
+#parallax a:hover .card img, #parallax a:focus .card img {
+    transform: scale(1.1);
+}

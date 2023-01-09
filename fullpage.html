@@ -16,9 +16,21 @@
     <link rel="stylesheet" href="css/navbar.css">
     <link rel="stylesheet" href="css/card.css">
     <link rel="stylesheet" href="css/featured.css">
+    <link rel="stylesheet" href="css/parallax.css">
+
+    <script src="js/parallax.js" defer></script>
 </head>
 <!-- Set our body to gray background and all text color to white -->
 <body class="bg-gray text-white">
+    <!-- Logopony -->
+    <!-- cropped -->
+    <!-- <svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 520" width="520" height="520"><path fill="currentColor" class="a" d="m76 11h368v170h-15v-159h-339v159h-14v-85zm0 330h14v159h339v-159h15v169h-368v-84.5z"/><path fill="currentColor" class="a" d="m76 217.8l55.1 24v18.9l-55.1 24v-16.5l40.3-17-40.3-16.9zm123.3 83.8q-10.6 0-20.1-3.9-9.4-4-16.5-10.8-7.1-6.8-11.1-16-4-9.3-4-19.7 0-10.3 4-19.5 4-9.3 11.1-16 7.1-6.9 16.5-10.8 9.5-4 20.1-4 11.3 0 21.3 4.5 10.2 4.5 17.5 12.5l-12.1 11.2q-5.1-5.7-12.2-8.7-6.9-3-14.5-3-7.2 0-13.6 2.7-6.5 2.5-11.3 7.1-4.8 4.7-7.6 10.9-2.7 6.1-2.7 13.1 0 7.1 2.7 13.2 2.8 6.2 7.6 10.8 4.8 4.7 11.3 7.4 6.4 2.5 13.6 2.5 8.1 0 15.3-3.2 7.3-3.3 12.5-9.5l12.5 10.5q-7.5 9-18 14-10.5 4.7-22.3 4.7zm99.5-1.6h-37.4v-97.5h37.4q10.3 0 19.5 3.9 9.1 3.7 15.8 10.5 6.9 6.6 10.8 15.5 3.9 8.8 3.9 18.8 0 10.1-3.9 18.9-3.9 8.9-10.8 15.6-6.7 6.7-15.8 10.5-9.2 3.8-19.5 3.8zm-20.9-16.5h20.9q6.8 0 13-2.6 6.1-2.5 10.6-6.8 4.7-4.4 7.2-10.2 2.7-5.9 2.7-12.7 0-6.6-2.7-12.4-2.5-5.9-7.2-10.2-4.5-4.5-10.6-7-6.2-2.6-13-2.6h-20.9zm78.4 37.1v-14.3h87.5v14.3z"/></svg> -->
+    <!-- vectorized -->
+    <!-- <svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="600" height="600"><path fill="currentColor" class="a" d="m116 256.8l55.1 24v18.9l-55.1 24v-16.5l40.3-17-40.3-16.9zm123.3 83.8q-10.6 0-20.1-3.9-9.4-4-16.5-10.8-7.1-6.8-11.1-16-4-9.3-4-19.7 0-10.3 4-19.5 4-9.3 11.1-16 7.1-6.9 16.5-10.8 9.5-4 20.1-4 11.3 0 21.3 4.5 10.2 4.5 17.5 12.5l-12.1 11.2q-5.1-5.7-12.2-8.7-6.9-3-14.5-3-7.2 0-13.6 2.7-6.5 2.5-11.3 7.1-4.8 4.7-7.6 10.9-2.7 6.1-2.7 13.1 0 7.1 2.7 13.2 2.8 6.2 7.6 10.8 4.8 4.7 11.3 7.4 6.4 2.5 13.6 2.5 8.1 0 15.3-3.2 7.3-3.3 12.5-9.5l12.5 10.5q-7.5 9-18 14-10.5 4.7-22.3 4.7zm99.5-1.6h-37.4v-97.5h37.4q10.3 0 19.5 3.9 9.1 3.7 15.8 10.5 6.9 6.6 10.8 15.5 3.9 8.8 3.9 18.8 0 10.1-3.9 18.9-3.9 8.9-10.8 15.6-6.7 6.7-15.8 10.5-9.2 3.8-19.5 3.8zm-20.9-16.5h20.9q6.8 0 13-2.6 6.1-2.5 10.6-6.8 4.7-4.4 7.2-10.2 2.7-5.9 2.7-12.7 0-6.6-2.7-12.4-2.5-5.9-7.2-10.2-4.5-4.5-10.6-7-6.2-2.6-13-2.6h-20.9zm78.4 37.1v-14.3h87.5v14.3z"/><path fill="currentColor" class="a" d="m116 50h368v170h-15v-159h-339v159h-14v-85zm0 330h14v159h339v-159h15v169h-368v-84.5z"/></svg> -->
+    <!-- raster frame and vector text -->
+    <!-- <svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="600" height="600"><defs><image  width="368" height="499" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAXAAAAHzAQMAAAAD89QKAAAAAXNSR0IB2cksfwAAAAZQTFRFERgdERgdY/cGNwAAAAJ0Uk5T/wDltzBKAAAAbUlEQVR4nO3ZwQkAIBAEsQUbt3PFDu4lcmbe6WASKWOVmziO4ziO4ziO4ziO4ziO4ziO4ziO4514HZ9wHMdxHMdxHMdxHMdxHMdxHMdxHMf/5U/NXhzHcRzHcRzHcRzHcRzHcRzHcRzH8atc/dpekUKOXSSyRQAAAABJRU5ErkJggg=="/></defs><path fill="currentColor" class="a" d="m116 256.8l55.1 24v18.9l-55.1 24v-16.5l40.3-17-40.3-16.9zm123.3 83.8q-10.6 0-20.1-3.9-9.4-4-16.5-10.8-7.1-6.8-11.1-16-4-9.3-4-19.7 0-10.3 4-19.5 4-9.3 11.1-16 7.1-6.9 16.5-10.8 9.5-4 20.1-4 11.3 0 21.3 4.5 10.2 4.5 17.5 12.5l-12.1 11.2q-5.1-5.7-12.2-8.7-6.9-3-14.5-3-7.2 0-13.6 2.7-6.5 2.5-11.3 7.1-4.8 4.7-7.6 10.9-2.7 6.1-2.7 13.1 0 7.1 2.7 13.2 2.8 6.2 7.6 10.8 4.8 4.7 11.3 7.4 6.4 2.5 13.6 2.5 8.1 0 15.3-3.2 7.3-3.3 12.5-9.5l12.5 10.5q-7.5 9-18 14-10.5 4.7-22.3 4.7zm99.5-1.6h-37.4v-97.5h37.4q10.3 0 19.5 3.9 9.1 3.7 15.8 10.5 6.9 6.6 10.8 15.5 3.9 8.8 3.9 18.8 0 10.1-3.9 18.9-3.9 8.9-10.8 15.6-6.7 6.7-15.8 10.5-9.2 3.8-19.5 3.8zm-20.9-16.5h20.9q6.8 0 13-2.6 6.1-2.5 10.6-6.8 4.7-4.4 7.2-10.2 2.7-5.9 2.7-12.7 0-6.6-2.7-12.4-2.5-5.9-7.2-10.2-4.5-4.5-10.6-7-6.2-2.6-13-2.6h-20.9zm78.4 37.1v-14.3h87.5v14.3z"/><use  href="#img1" x="116" y="50"/></svg> -->
+    <!-- vector text only -->
+    <!-- <svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="600" height="600"><path fill="currentColor" class="a" d="m116 256.8l55.1 24v18.9l-55.1 24v-16.5l40.3-17-40.3-16.9zm123.3 83.8q-10.6 0-20.1-3.9-9.4-4-16.5-10.8-7.1-6.8-11.1-16-4-9.3-4-19.7 0-10.3 4-19.5 4-9.3 11.1-16 7.1-6.9 16.5-10.8 9.5-4 20.1-4 11.3 0 21.3 4.5 10.2 4.5 17.5 12.5l-12.1 11.2q-5.1-5.7-12.2-8.7-6.9-3-14.5-3-7.2 0-13.6 2.7-6.5 2.5-11.3 7.1-4.8 4.7-7.6 10.9-2.7 6.1-2.7 13.1 0 7.1 2.7 13.2 2.8 6.2 7.6 10.8 4.8 4.7 11.3 7.4 6.4 2.5 13.6 2.5 8.1 0 15.3-3.2 7.3-3.3 12.5-9.5l12.5 10.5q-7.5 9-18 14-10.5 4.7-22.3 4.7zm99.5-1.6h-37.4v-97.5h37.4q10.3 0 19.5 3.9 9.1 3.7 15.8 10.5 6.9 6.6 10.8 15.5 3.9 8.8 3.9 18.8 0 10.1-3.9 18.9-3.9 8.9-10.8 15.6-6.7 6.7-15.8 10.5-9.2 3.8-19.5 3.8zm-20.9-16.5h20.9q6.8 0 13-2.6 6.1-2.5 10.6-6.8 4.7-4.4 7.2-10.2 2.7-5.9 2.7-12.7 0-6.6-2.7-12.4-2.5-5.9-7.2-10.2-4.5-4.5-10.6-7-6.2-2.6-13-2.6h-20.9zm78.4 37.1v-14.3h87.5v14.3z"/></svg> -->
     <!-- 
         main tag contains all section different sections of the website
         we are setting the left and right padding to 1rem
@@ -75,10 +87,41 @@
         </section>
         <!-- Feature section end -->
 
+        <!-- Popular section start -->
+        <style>
+            #parallax {
+                left: 0%;
+            }
+        </style>
+
+        <section class="parallax-container relative px-4">
+            <h1>Popular this week</h1>
+
+            <div id="parallax" class="px-4" data-mouse-down-at="0" data-prev-percentage="0">
+                <a href="" draggable="false">
+                    <div class="card">
+                        <img class="parallax-img" src="images/kimetsu-no-yaiba.jpeg" alt="Kimetsu no Yaiba thumbnail" draggable="false">
+                        <span class="card-title px-4 py-4">Kimetsu no Yaiba</span>
+                    </div>
+                </a>
+                <img class="parallax-img" src="https://picsum.photos/seed/1/536/354" draggable="false">
+                <img class="parallax-img" src="https://picsum.photos/seed/2/536/354" draggable="false">
+                <img class="parallax-img" src="https://picsum.photos/seed/3/536/354" draggable="false">
+                <img class="parallax-img" src="https://picsum.photos/seed/4/536/354" draggable="false">
+                <img class="parallax-img" src="https://picsum.photos/seed/5/536/354" draggable="false">
+                <img class="parallax-img" src="https://picsum.photos/seed/6/536/354" draggable="false">
+                <img class="parallax-img" src="https://picsum.photos/seed/7/536/354" draggable="false">
+                <img class="parallax-img" src="https://picsum.photos/seed/8/536/354" draggable="false">
+                <img class="parallax-img" src="https://picsum.photos/seed/9/536/354" draggable="false">
+                <img class="parallax-img" src="https://picsum.photos/seed/10/536/354" draggable="false">
+            </div>
+        </section>
+        <!-- Popular section end -->
+
         <!-- Card section Start -->
-        <section class="px-4">
+        <section class="px-4" style="margin-top: 6rem;margin-bottom: 6rem;">
             <!-- title for the section -->
-            <h1>Recently Updated</h1>
+            <h1 style="margin-top: 0;">Recently Updated</h1>
 
             <!-- description of the section or aka section body copy -->
             <!-- <p>This is a responsive grid of cards. I recommend checking the source code to learn how this is done.</p> -->
